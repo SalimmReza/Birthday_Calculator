@@ -5,67 +5,199 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="11dp"
+    android:background="#34495E"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#5D6D7E">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="82dp"
+                android:gravity="start"
+                android:text="Age Calculator"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="44dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="140dp"
+                android:text="Here you can easily calculate how old are you. To get the calculation cick on the calander date"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="310dp"
+                android:layout_marginTop="97dp"
+                android:src="@drawable/birthdate" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+
+            android:id="@+id/above_rl_id"
+            android:layout_width="339dp"
+            android:layout_height="151dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="233dp"
+            android:background="@drawable/rect_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Birth of Date"
+                android:textColor="#B3B6B7"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btn_birth_id"
+
+                android:layout_width="205dp"
+                android:layout_height="43dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="47dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                android:text="01-01-2000"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_width="53dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="267dp"
+                android:layout_marginTop="46dp"
+                android:src="@drawable/calander" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+
+            android:id="@+id/below_rl_id"
+            android:layout_width="339dp"
+            android:layout_height="151dp"
+            android:layout_below="@id/above_rl_id"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="425dp"
+            android:background="@drawable/rect_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Today's Date"
+                android:textColor="#B3B6B7"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btn_today_id"
+                android:layout_width="205dp"
+                android:layout_height="43dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="47dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_width="53dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="267dp"
+                android:layout_marginTop="46dp"
+                android:src="@drawable/calander" />
+
+
+        </RelativeLayout>
 
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/btn_calculate"
+            android:layout_width="173dp"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_birth_id"
-            android:text="01/01/1000"
+            android:layout_below="@id/below_rl_id"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="623dp"
+            android:backgroundTint="@color/white"
+            android:foregroundGravity="center"
+            android:text="Calculate"
+            android:textColor="@color/black"
             android:textSize="20sp"
-            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
-            android:background="@color/white"/>
+            android:textStyle="bold" />
+
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="25dp"
-            android:text="To"
-
-            android:textStyle="bold"
-            android:gravity="center"/>
-
-        <Button
+            android:id="@+id/tv_result_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_today_id"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
-            android:background="@color/white"/>
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="726dp"
+            android:text=" 0 Years | 0 Months | 0  Days"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_calculate"
-        android:text="Calculate"
-        android:layout_marginTop="10dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Result"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_marginTop="50dp"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_result_id"
-        android:text=" 0 Years | 0 Months | 0 Days"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp"/>
 
 
 

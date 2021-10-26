@@ -1,7 +1,5 @@
 package com.example.birthday_calculator;
 
-
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
@@ -119,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                     }else
                     {
                         Toast.makeText(getApplicationContext()
-                                , "jugkjrfjhujfg"
+                                , "Enter Correct Birthdate"
                                 ,Toast.LENGTH_LONG).show();
 
                     }
