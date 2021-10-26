@@ -41,7 +41,7 @@
                 android:layout_marginStart="44dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="140dp"
-                android:text="Here you can easily calculate how old are you. To get the calculation cick on the calander date"
+                android:text="Here you can easily calculate how old you are. To get the calculation cick on the calander date"
                 android:textColor="@color/white"
                 android:textSize="15dp"
                 android:textStyle="normal" />
