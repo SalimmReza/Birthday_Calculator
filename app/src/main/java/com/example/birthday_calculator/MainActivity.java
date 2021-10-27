@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         int month= calendar.get(Calendar.MONTH);
         int day= calendar.get(Calendar.DAY_OF_MONTH);
 
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy");
         String date= simpleDateFormat.format(Calendar.getInstance().getTime());
         today.setText(date);
 
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
                 month = month +1;
-                String date = day+ "/" +month + "/" +year;
+                String date = day+ "-" +month + "-" +year;
                 birth.setText(date);
 
             }
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
                 month = month +1;
-                String date = day+ "/" +month + "/" +year;
+                String date = day+ "-" +month + "-" +year;
                 today.setText(date);
 
             }
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String sdate = birth.getText().toString();
                 String edate = today.getText().toString();
-                SimpleDateFormat simpleDateFormat1 = new SimpleDateFormat("dd/MM/yyyy");
+                SimpleDateFormat simpleDateFormat1 = new SimpleDateFormat("dd-MM-yyyy");
 
                 try {
                     Date date1 = simpleDateFormat1.parse(sdate);
@@ -125,7 +125,6 @@ public class MainActivity extends AppCompatActivity {
                 } catch (ParseException e) {
                     e.printStackTrace();
                 }
-
 
             }
         });
